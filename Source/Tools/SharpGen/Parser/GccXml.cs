@@ -297,7 +297,7 @@ namespace SharpGen.Parser
         public static string GetVisualStudioVersion()
         {
 #if DIRECTX11_2
-            string vsVersion = ResolveVisualStudioVersion("12");
+            string vsVersion = ResolveVisualStudioVersion("14");
 #elif DIRECTX11_1
             string vsVersion = ResolveVisualStudioVersion("11");
 #else

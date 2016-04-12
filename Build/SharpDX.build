@@ -82,14 +82,14 @@
 
     <Exec Command="RMDIR /Q /S $(SharpDXRepo)\Bin"/>
 
-    <CallTarget Targets="BuildSigned" Condition="'$(BuildSignedSharpDX)' == 'true'"/>
+<!--    <CallTarget Targets="BuildSigned" Condition="'$(BuildSignedSharpDX)' == 'true'"/>
     <CallTarget Targets="DesktopNet20" />
     <CallTarget Targets="DesktopNet40" />
-    <CallTarget Targets="MetroWin8" />
+    <CallTarget Targets="MetroWin8" />-->
     <CallTarget Targets="DesktopDx112" />
-    <CallTarget Targets="WP8-x86" />
+<!--    <CallTarget Targets="WP8-x86" />
     <CallTarget Targets="WP8-ARM" />
-    <CallTarget Targets="WP81" />
+    <CallTarget Targets="WP81" />-->
   </Target>
 
   <Target Name="BuildSigned">
