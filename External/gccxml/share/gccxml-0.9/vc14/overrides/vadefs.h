@@ -124,21 +124,23 @@ extern "C" {
         template <typename _Ty>
         struct __vcrt_va_list_is_reference
         {
-            enum : bool { __the_value = false };
+//            enum : bool { __the_value = false };
+            enum { __the_value = false };
         };
 
         template <typename _Ty>
         struct __vcrt_va_list_is_reference<_Ty&>
         {
-            enum : bool { __the_value = true };
+//            enum : bool { __the_value = true };
+            enum { __the_value = true };
         };
-
+/*
         template <typename _Ty>
         struct __vcrt_va_list_is_reference<_Ty&&>
         {
             enum : bool { __the_value = true };
         };
-
+*/
         template <typename _Ty>
         void __vcrt_va_start_verify_argument_type() throw()
         {

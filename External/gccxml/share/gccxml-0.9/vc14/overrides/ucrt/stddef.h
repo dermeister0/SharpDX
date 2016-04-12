@@ -13,7 +13,7 @@
 _CRT_BEGIN_C_HEADER
 
 
-
+/*
 #ifdef __cplusplus
     namespace std
     {
@@ -22,7 +22,7 @@ _CRT_BEGIN_C_HEADER
 
     using ::std::nullptr_t;
 #endif
-
+*/
 
 
 // Declare errno functions and macros
